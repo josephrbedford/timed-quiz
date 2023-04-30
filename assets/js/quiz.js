@@ -20,8 +20,8 @@ var currentQuestion = 0;
 var countdownTimer;
 
 function stopGame() {
-
-    clearInterval(countdownTimer);                          // Stop timer
+    
+     clearInterval(countdownTimer);                          // Stop timer
 
     timer.textContent = "";                                 // Clear timer on screen
 
@@ -47,8 +47,10 @@ function onViewScores(e) {
 
 function onSelectAnswer(e) {
     var correctAns = questions[currentQuestion].answer;     // Get correct answer from questions object
-    var userAns = e.target.textcontent;                     // Get user answer from element target
+    var userAns = e.target.textContent;                     // Get user answer from element target
 
+    console.log("User " + userAns);
+    console.log("correct " + correctAns);
     if (correctAns === userAns) {                           // Compare
         score++;                                            // Correct increment score
 
@@ -59,7 +61,11 @@ function onSelectAnswer(e) {
 
         displayMessage('Wrong!');                           // Display incorrect dialog
     }
-    displayQuestion();                                      // Call displayQuestion for next question
+    console.log("score " + score);
+    setTimeout(function() {
+        displayQuestion();                                  // Call displayQuestion for next question
+    }, 1000)                                                // Pause for a second to display right or wrong
+                                         
 }
 
 function displayMessage(msg) {
@@ -100,7 +106,7 @@ function onStartGame () {
 
     countdownTimer = setInterval(function () {              // Start timer
         if (secondsLeft > 0) {                              // If timer not run out
-            timer.textContent = secpmdsLeft;                // Update time left on screen
+            timer.textContent = `Time left: ${secondsLeft} seconds`;                // Update time left on screen
         } else {
             stopGame();                                     // Call stopGame to end game
         }
@@ -118,3 +124,4 @@ startQuiz.addEventListener("click", onStartGame);           // Event listener
 saveScore.addEventListener("click", onSaveScore);
 viewScores.addEventListener("click", onViewScores);
 playAgain.addEventListener("click", onStartGame);
+
