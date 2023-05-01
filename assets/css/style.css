@@ -19,7 +19,7 @@
   
   /* Set the page background color and font family */
   body {
-    background-image: url('../assets/images/techy.jpg');
+    background-image: url('../images/techy.jpg');
     background-size: cover;           
     background-color: #f5f5f5;
     font-family: Arial, sans-serif;
