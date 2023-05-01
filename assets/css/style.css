@@ -7,6 +7,15 @@
     margin: 0;
     padding: 0;
   }
+
+/* Style the main container */
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
   
   /* Set the page background color and font family */
   body {
@@ -35,21 +44,13 @@
     font-weight: bold;
   }
   
-  /* Style the main container */
-  main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
   /* Style the welcome section */
   #welcome {
     text-align: center;
     margin-bottom: 20px;
   }
   
+  /* Style h1 */
   h1 {
     font-size: 3rem;
     margin-bottom: 20px;
@@ -69,15 +70,18 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
+  /* Style quiz section */
   #quiz {
     margin-bottom: 20px;
   }
   
+  /* Style question section */
   #question {
     margin-bottom: 10px;
     line-height: 1.5;
   }
   
+  /* Style options section */
   #options {
     margin-bottom: 20px;
   }
@@ -100,20 +104,25 @@
     transition: background-color 0.3s ease;
   }
   
+  /* Style the individual options */
   .option {
     text-align: center;
     padding: 10px;
     border-radius: 3px;
   }
+
+  /* Style individual options hover behavior */
   .option:hover {
     cursor: pointer;
     background-color: #3e8e41;
   }
 
+  /* Style button hover behavior */
   .btn:hover {
     background-color: #3e8e41;
   }
 
+  /* Hide anything assigned to hidden class */
   .hidden {
     display: none;
   }
@@ -125,19 +134,6 @@
     border-radius: 4px;
     border: 1px solid #ccc;
     margin-right: 10px;
-  }
-  
-  /* Make the hidden sections invisible */
-  .hidden {
-    display: none;
-  }
-  
-  main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    padding: 0 10px;
   }
   
   /* Set the result container to a flexbox layout */
@@ -156,6 +152,7 @@
     overflow: hidden;
   }
   
+  /* Style the results of the scores page */
   .result {
     background-color: #f5f5f5;
     display: flex;
@@ -164,6 +161,7 @@
     font-weight: bold;
   }
   
+  /* Style each score item of the scores page */
   .score-item {
     flex-basis: 50%;
     padding: 5px 10px;
@@ -183,6 +181,7 @@
     transition: background-color 0.3s ease;
   }
   
+  /* Style back to quiz hover button on scores page */
   #backtoQuiz:hover {
     background-color: #3e8e41;
   }

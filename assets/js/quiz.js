@@ -60,6 +60,8 @@ function onSelectAnswer(e) {
         score--;                                            // Incorrect decrement score
 
         displayMessage('Wrong!');                           // Display incorrect dialog
+
+        secondsLeft-=10;                                    // Remove 10 seconds from timer
     }
     console.log("score " + score);
     setTimeout(function() {
