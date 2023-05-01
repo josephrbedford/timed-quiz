@@ -1,0 +1,188 @@
+--option-hover: rgb(231, 228, 228);
+
+
+/* Apply a reset to the page */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+/* Style the main container */
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Set the page background color and font family */
+  body {
+    background-image: url('/assets/images/techy.jpg');
+    background-size: cover;           
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  /* Style the high scores section */
+  #highscores {
+    font-weight: bold;
+  }
+  
+  /* Style the timer section */
+  #timer {
+    font-weight: bold;
+  }
+  
+  /* Style the welcome section */
+  #welcome {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style h1 */
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: rgb(34, 11, 248);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.8), 0 0 50px rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Style the quiz section */
+  #quiz, #result {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px; 
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style quiz section */
+  #quiz {
+    margin-bottom: 20px;
+  }
+  
+  /* Style question section */
+  #question {
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  
+  /* Style options section */
+  #options {
+    margin-bottom: 20px;
+  }
+  
+  /* Style the result section */
+  #summary {
+    font-weight: bold;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Style the individual options */
+  .option {
+    text-align: center;
+    padding: 10px;
+    border-radius: 3px;
+  }
+
+  /* Style individual options hover behavior */
+  .option:hover {
+    cursor: pointer;
+    background-color: #3e8e41;
+  }
+
+  /* Style button hover behavior */
+  .btn:hover {
+    background-color: #3e8e41;
+  }
+
+  /* Hide anything assigned to hidden class */
+  .hidden {
+    display: none;
+  }
+  
+  /* Style the input field */
+  input[type="text"] {
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+  }
+  
+  /* Set the result container to a flexbox layout */
+  #result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Style the score sheet */
+  #scoresheet {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  /* Style the results of the scores page */
+  .result {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    font-weight: bold;
+  }
+  
+  /* Style each score item of the scores page */
+  .score-item {
+    flex-basis: 50%;
+    padding: 5px 10px;
+    text-align: center;
+  }
+  
+  /* Style the back to quiz button */
+  #backtoQuiz {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Style back to quiz hover button on scores page */
+  #backtoQuiz:hover {
+    background-color: #3e8e41;
+  }
+  
